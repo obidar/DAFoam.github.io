@@ -22,7 +22,7 @@ ls
 Once you are in a tutorial folder, use the following command to start the DAFoam Docker image.
 
 <pre>
-docker run -it --rm -u dafoamuser --mount "type=bind,src=$(pwd),target=/home/dafoamuser/mount" -w /home/dafoamuser/mount dafoam/opt-packages:{{ site.latest_version }} bash
+docker run -it --rm -u dafoamuser --mount "type=bind,src=$( pwd ),target=/home/dafoamuser/mount" -w /home/dafoamuser/mount dafoam/opt-packages:{{ site.latest_version }} bash
 </pre>
 
 
